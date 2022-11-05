@@ -1,0 +1,226 @@
+<!-- Section with four info areas left & one card right with image and waves -->
+<form [formGroup]="appointmentSignup" (ngSubmit)="saveSign()">
+  <div class="form-box">
+    <div class="container">
+      <h5 class="card-title"></h5>
+      <section class="py-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!--left-->
+            <div class="col-lg-6">
+              <div class="row justify-content-start">
+                <div class="col-md-6">
+                  <div class="info">
+                    <i
+                      class="material-icons text-3xl text-gradient text-info mb-3"
+                      >public</i
+                    >
+                    <h5>Fully integrated</h5>
+                    <p>
+                      We get insulted by others, lose trust for those We get
+                      back freezes
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info">
+                    <i
+                      class="material-icons text-3xl text-gradient text-info mb-3"
+                      >payments</i
+                    >
+                    <h5>Payments functionality</h5>
+                    <p>
+                      We get insulted by others, lose trust for those We get
+                      back freezes
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-start mt-4">
+                <div class="col-md-6">
+                  <div class="info">
+                    <i
+                      class="material-icons text-3xl text-gradient text-info mb-3"
+                      >apps</i
+                    >
+                    <h5>Prebuilt components</h5>
+                    <p>
+                      We get insulted by others, lose trust for those We get
+                      back freezes
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info">
+                    <i
+                      class="material-icons text-3xl text-gradient text-info mb-3"
+                      >3p</i
+                    >
+                    <h5>Improved platform</h5>
+                    <p>
+                      We get insulted by others, lose trust for those We get
+                      back freezes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--right-->
+            <div class="col-lg-6 ms-auto mt-lg-0 mt-4">
+              <div class="card">
+                <div
+                  class="card-header p-0 position-relative mt-n4 mx-3 z-index-2"
+                >
+                  <a class="d-block blur-shadow-image"> </a>
+                </div>
+                <div class="card-body text-center" id="form">
+                  <div class="row">
+                    <!--fname-->
+                    <div class="col-sm-4">
+                      <div class="form-floating mb-4">
+                        <input
+
+                          type="text"
+                          class="form-control"
+                          placeholder="name@example.com"
+                          formControlName="firstName"
+                          required
+                        />
+                        <label class="form-label" for="nameinput"
+                          >First Name</label
+                        >
+                      </div>
+                    </div>
+                    <!--lname-->
+                    <div class="col-sm-4">
+                      <div class="form-floating mb-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="name@example.com"
+                          formControlName="lastName"
+                          required
+                        />
+                        <label class="form-label" for="lastinput"
+                          >Last Name</label
+                        >
+                      </div>
+                    </div>
+                    <!--Mname-->
+                    <div class="col-sm-4">
+                      <div class="form-floating mb-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="name@example.com"
+                          formControlName="middleName"
+                          required
+                        />
+                        <label class="form-label" for="nameinput"
+                          >Middle Name</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!--bdate-->
+                    <div class="col-md-6">
+                      <div class="col-sm">
+                        <div class="form-floating mb-4">
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="name@example.com"
+                            formControlName="birthDate"
+                            required
+                          />
+                          <label class="form-label" for="date">Birthday</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!--age-->
+                    <div class="col-sm-4">
+                      <div class="form-floating mb-4">
+                        <input
+                          type="number"
+                          class="form-control"
+                          name="quantity"
+                          placeholder="name@example.com"
+                          formControlName="age"
+                          required
+                        />
+                        <label class="form-label" for="email">Age</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Email input -->
+                  <div class="form-floating mb-4" id="f1">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailed"
+                      placeholder="name@example.com"
+                      formControlName="email"
+                      required
+                    />
+                    <label id="email" class="form-label" for="email"
+                      >Email address</label
+                    >
+                  </div>
+                  <!-- Password input -->
+                  <div class="form-floating mb-4" id="f2">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passed"
+                      placeholder="name@example.com"
+                      formControlName="password"
+                      required
+                    />
+                    <label for="floatingInput" id="pass">Password</label>
+                  </div>
+                  <!-- 2 column grid layout for inline styling -->
+                  <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          id="checked"
+                          type="checkbox"
+                          value=""
+                          id="form1Example3"
+                          checked
+                        />
+                        <label
+                          id="check"
+                          class="form-check-label"
+                          for="form1Example3"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <!-- Simple link -->
+                      <a href="#!">Forgot password?</a>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block">
+                      Sign in
+                    </button>
+                    <p>
+                      have an account
+                      <a routerLink="/login" class="link-primary">sign in </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</form>
